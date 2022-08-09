@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<h3>Ứng dụng quản lý sản phẩm sử dụng hàm</h3>
+<style>
+  .body {
+    display: flex;
+  }
+
+</style>
+</head>
+<body onload="showProduct();">
+  <script src="product_management.js"></script>
+  <div class="body">
+  <div>
+    <fieldset>
+      <legend style="text-align: center;">Bảng đầu vào</legend>
+      <p>Tên Sản phẩm <input type="text" id="input_product_name"></p>
+      <button id="add" onclick="addNew();">Add New</button>
+      <button id="update" onclick="update();" style="display: none;">Update</button>
+      <input type="hidden" id="edit_index">
+    </fieldset>
+  </div>
+  <div>
+    <fieldset>
+      <legend style="text-align: center;">Bảng danh mục sản phẩm</legend>
+      <table id="tbl_product" border=1 style="margin-left: 5px;"></table>
+    </fieldset>
+  </div>
+</div>
+
+
+
+
+</body>
+
+
+</html>
+
